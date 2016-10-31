@@ -1,0 +1,26 @@
+<template bindable="router">
+
+    <nav class="nav container">
+        <div class="nav-left">
+            <a class="nav-item is-brand" href="#">
+                ${router.title}
+            </a>
+        </div>
+
+
+        <a repeat.for="row of router.navigation"
+           class="nav-item ${row.isActive ? 'is-active' : ''}"
+           href.bind="row.href">
+            ${row.title}
+        </a>
+
+        <span class="nav-item">
+          <a class="button is-primary" href="#">
+              <span class="icon"> <i class="fa fa-bolt"></i> </span>
+              <span>new Spark</span>
+          </a>
+        </span>
+    </nav>
+
+
+</template>

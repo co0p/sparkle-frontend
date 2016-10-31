@@ -1,0 +1,12 @@
+<template>
+  <require from="./nav-bar.html"></require>
+  <require from="./bottom.html"></require>
+
+  <nav-bar router.bind="router"></nav-bar>
+
+  <div class="container content">
+    <router-view></router-view>
+  </div>
+
+  <bottom></bottom>
+</template>

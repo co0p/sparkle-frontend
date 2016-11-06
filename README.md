@@ -26,3 +26,5 @@ First build the prod bundle
 Then upload the slug:
 
     heroku static:deploy
+
+We are using: heroku plugins:install heroku-cli-static
